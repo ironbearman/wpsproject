@@ -63,12 +63,11 @@ class CreateNotes(unittest.TestCase):
 
         }
         data = {
-            "title": "testtitile",
-            "summary": "testsummary",
-            "body": "neirong",
-            "localContentVersion": version,
-            "noteId": '58b80a76a3f29962c7fe9ac6a09ea986',
-            "BodyType": 0
+            'noteId': str(int(time.time() * 1000)) + '_noteId',
+            'star': 0,
+            'remindTime': '',
+            'remindType': '1',
+            'groupId': 0
         }
 
         res = requests.post(url=url, headers=headers, json=data)
@@ -89,12 +88,11 @@ class CreateNotes(unittest.TestCase):
 
         }
         data = {
-            "title": "testtitile",
-            "summary": "testsummary",
-            "body": "neirong",
-            "localContentVersion": version,
-            "noteId": '58b80a76a3f29962c7fe9ac6a09ea986',
-            "BodyType": 0
+            'noteId': str(int(time.time() * 1000)) + '_noteId',
+            'star': 0,
+            'remindTime': '',
+            'remindType': '1',
+            'groupId': 0
         }
 
         res = requests.post(url=url, headers=headers, json=data)
@@ -115,12 +113,11 @@ class CreateNotes(unittest.TestCase):
 
         }
         data = {
-            "title": "testtitile",
-            "summary": "testsummary",
-            "body": "neirong",
-            "localContentVersion": version,
-            "noteId": '58b80a76a3f29962c7fe9ac6a09ea986',
-            "BodyType": 0
+            'noteId': str(int(time.time() * 1000)) + '_noteId',
+            'star': 0,
+            'remindTime': '',
+            'remindType': '1',
+            'groupId': 0
         }
 
         res = requests.post(url=url, headers=headers, json=data)

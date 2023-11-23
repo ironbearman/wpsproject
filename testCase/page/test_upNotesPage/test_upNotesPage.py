@@ -33,9 +33,6 @@ class DeleteTrashNotes(unittest.TestCase):
         data = {
             'noteId': str(int(time.time() * 1000)) + '_noteId',
             'star': 0,
-            'remindTime': '',
-            'remindType': '',
-            'groupId': 0
         }
         res = requests.post(url=url, headers=headers, json=data)
         print(res.status_code)
@@ -59,8 +56,8 @@ class DeleteTrashNotes(unittest.TestCase):
             'Cookie': 'wps_sid=' + self.sid1
         }
         data = {
-            "title": "testtitile",
-            "summary": "testsummary",
+            "title": "test",
+            "summary": "test",
             "body": "neirong",
             "localContentVersion": version,
             "noteId": '58b80a76a3f29962c7fe9ac6a09ea986',
